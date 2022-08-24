@@ -1,0 +1,87 @@
+.row{
+    padding: 0;/*espacion enre caja y texto*/
+    margin: 0;/*espacio entre caja y caja*/
+    list-style: none;/*desavilitar elementos de lista*/
+    display: -webkit-box;/*para safari*/
+    display: -moz-box;/*mozilla*/
+    display: -ms-flexbox;/*maicrosoft*/
+    display: -webkit-flex;/*chrome*/
+    display: -o-flexbox;/*opera*/
+    display: flex;/*propiedad que habilita en flexbox*/
+    flex-wrap: flex;
+    -webkit-flex-flow:row wrap;
+    justify-content: space-around;/*espacio entre cajas*/
+}
+.col-100{
+    background-color: aquamarine;/*color de fondo*/
+    padding: 5px;/*espacion enre texto y caja*/
+    width: 100%;/*ancho de caja*/
+    height: 100%;/*alta de caja*/
+    margin-top: 10px;/*espacion entre borde de pantalla y caja Top*/
+    line-height: 40px;/*espacio de alineación de texto en la vertical*/
+    color: rgb(0, 0, 0);/*color de letra*/
+    font-weight: bold;/*negrita*/
+    font-size: 3em;/*tamaño de fuente*/
+    text-align: center;/*aliacion de texto*/
+}
+a{
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    background-color: rgb(0, 255, 170);
+    border-radius: 10px;
+    margin-right: 50px;
+    cursor: pointer;
+    transition: .3s;  
+}
+a:hover{
+    background-color: blue;
+}
+.col-50{
+    background-color: aquamarine;/*color de fondo*/
+    padding: 5px;/*espacion enre texto y caja*/
+    width: 49%;/*ancho de caja*/
+    height: 100%;/*alta de caja*/
+    margin-top: 10px;/*espacion entre borde de pantalla y caja Top*/
+    line-height: 150px;/*espacio de alineación de texto en la vertical*/
+    color: rgb(0, 0, 0);/*color de letra*/
+    font-weight: bold;/*negrita*/
+    font-size: 3em;/*tamaño de fuente*/
+    text-align: center;/*aliacion de texto*/
+}
+.col-33{
+    background-color: aquamarine;/*color de fondo*/
+    padding: 5px;/*espacion enre texto y caja*/
+    width: 32%;/*ancho de caja*/
+    height: 100%;/*alta de caja*/
+    margin-top: 10px;/*espacion entre borde de pantalla y caja Top*/
+    line-height: 150px;/*espacio de alineación de texto en la vertical*/
+    color: rgb(0, 0, 0);/*color de letra*/
+    font-weight: bold;/*negrita*/
+    font-size: 3em;/*tamaño de fuente*/
+    text-align: center;/*aliacion de texto*/
+}
+@media(max-width:600px){
+    .row, .col-50, .col-33, .col-100{
+        display: block;/*dispocion de cajas una debajo de la otra*/
+        width: 100%;/*ancho de la cala a tamaño de pantalla 400*/
+        margin: 0 0 10px 0;/*espacio enre cajas*/
+    }
+}
+@media(max-width:600px){
+    .a{
+        display: none;
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+}
+@media(min-width:600px){
+    .b{
+        display: none;
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+}
+ul{
+    display: flex;
+}
